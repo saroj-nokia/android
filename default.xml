@@ -11,14 +11,14 @@
   <remote  name="aosp"
            fetch="https://android.googlesource.com"
            review="android-review.googlesource.com"
-           revision="refs/tags/android-15.0.0_r2" />
+           revision="refs/tags/android-15.0.0_r5" />
 
   <default revision="refs/heads/lineage-22.0"
            remote="github"
            sync-c="true"
            sync-j="4" />
 
-  <superproject name="platform/superproject" remote="aosp" revision="android-15.0.0_r2" />
+  <superproject name="platform/superproject" remote="aosp" revision="android-15.0.0_r5" />
   <contactinfo bugurl="go/repo-bug" />
 
   <!-- AOSP Projects -->
@@ -71,7 +71,7 @@
   <project path="device/generic/vulkan-cereal" name="device/generic/vulkan-cereal" groups="pdk" remote="aosp" />
   <project path="device/google_car" name="device/google_car" groups="device,pdk" remote="aosp" />
   <project path="device/google/atv" name="LineageOS/android_device_google_atv" groups="device,broadcom_pdk,generic_fs,pdk" />
-  <project path="device/google/contexthub" name="device/google/contexthub" groups="device,pdk" remote="aosp" />
+  <project path="device/google/contexthub" name="LineageOS/android_device_google_contexthub" groups="device,pdk" />
   <project path="device/google/cuttlefish" name="device/google/cuttlefish" groups="device,pdk" remote="aosp" />
   <project path="device/google/cuttlefish_prebuilts" name="device/google/cuttlefish_prebuilts" groups="device,pdk" clone-depth="1" remote="aosp" />
   <project path="device/google/cuttlefish_vmm" name="device/google/cuttlefish_vmm" groups="device,pdk" clone-depth="1" remote="aosp" />
@@ -274,12 +274,12 @@
   <project path="external/junit-params" name="platform/external/junit-params" groups="pdk" remote="aosp" />
   <project path="external/kernel-headers" name="platform/external/kernel-headers" groups="pdk" remote="aosp" />
   <project path="external/kmod" name="platform/external/kmod" groups="pdk" remote="aosp" />
-  <project path="external/kotlinc" name="platform/external/kotlinc" groups="pdk" remote="aosp" />
+  <project path="external/kotlinc" name="LineageOS/android_external_kotlinc" groups="pdk" />
   <project path="external/kotlinpoet" name="platform/external/kotlinpoet" groups="pdk" remote="aosp" />
   <project path="external/kotlinx.atomicfu" name="platform/external/kotlinx.atomicfu" groups="pdk" remote="aosp" />
-  <project path="external/kotlinx.coroutines" name="platform/external/kotlinx.coroutines" groups="pdk" remote="aosp" />
+  <project path="external/kotlinx.coroutines" name="LineageOS/android_external_kotlinx.coroutines" groups="pdk" />
   <project path="external/kotlinx.metadata" name="platform/external/kotlinx.metadata" groups="pdk" remote="aosp" />
-  <project path="external/kotlinx.serialization" name="platform/external/kotlinx.serialization" groups="pdk" remote="aosp" />
+  <project path="external/kotlinx.serialization" name="LineageOS/android_external_kotlinx.serialization" groups="pdk" />
   <project path="external/ktfmt" name="platform/external/ktfmt" groups="pdk,sysui-studio" remote="aosp" />
   <project path="external/ksoap2" name="platform/external/ksoap2" groups="pdk" remote="aosp" />
   <project path="external/ksp" name="platform/external/ksp" groups="pdk" remote="aosp" />
